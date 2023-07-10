@@ -15,26 +15,4 @@ Unlike the Palace of Points, a user may have multiple addresses/accounts (up to 
 Sending a transcation is simple, as you can only send to other users. You can also put a short PUBLIC transcation message. No proof required.
 
 All Transcations are stored on the ledger.
-
-# Guide to reading the ledger
-Each transcation uses this format (without the curly brackets):
-
- #{transcation number} {sender's address} == {recipent's address} 
- +{amount being sent} 
- SENDER_BAL BF {sender's balance before transcation}
- SENDER_BAL AFT {sender's balance after transcation}
- RECIPENT_BAL BF {recipent's address before transcation}
- RECIPENT_BAL AFT {recipent's address before transcation}
- MSG = {transcation message} 
-
- Note that after the "+", "wPoP" is NOT placed, and that the transcation amount is to the precision of 0.01, even if the transcation amount is a whole number or it is only to the precision of 0.1. If there is no transcation message, the message is left as "NA"
- Example:
-
- #1 1-0x6ce52 == 1572-0xb59bc
- +25.00
- SENDER_BAL BF 150.00
- SENDER_BAL AFT 125.00
- RECIPENT_BAL BF 0.00
- RECIPENT_BAL AFT 25.00
- MSG = NA
  
